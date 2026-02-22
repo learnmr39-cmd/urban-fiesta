@@ -36,7 +36,7 @@ if (newPage) {
 }
 } }
 async function main() { try { console.log("Starting Aviator Bot...");
-const strategyConfig = config.BETTING_STRATEGIES.MODERATE;
+const strategyConfig = { initialBet: 10, maxBet: 100, minBet: 1, targetMultiplier: 1.5, stopLoss: 50, takeProfit: 100, martingaleMultiplier: 2 };
 
 const { browser, page } = await initializeBrowser();
 
