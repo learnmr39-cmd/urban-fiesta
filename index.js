@@ -1,2 +1,4 @@
-// Code from Raccoon254/Aviator-Automated-Betika-Bot: index.js
-console.log('Aviator Bot Loaded'); // Sample code
+const express = require("express"); const app = express();
+app.get("/", (req, res) => { res.send("Aviator Bot Running"); });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => { console.log("Server running on port " + PORT); });
