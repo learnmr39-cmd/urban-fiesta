@@ -13,7 +13,6 @@ await page.goto("https://example.com");
 
 console.log("Browser launched successfully");
 
-// Run game monitor function
 gameMonitor(page);
 
 console.log("Bot ready");
